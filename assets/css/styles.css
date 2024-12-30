@@ -1,0 +1,460 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+body {
+  
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.login__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.login__form {
+ 
+
+    padding: 1.5rem 1rem;
+    background: #000 !important;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #F26C20;
+    position: relative;
+    height: auto;
+    width: fit-content;
+    /* margin-top: 85px; */
+}
+
+.whatsapp_ids_section[_ngcontent-hcx-c42] {
+  margin-top: 5px;
+}
+.whatsapp_ids_section[_ngcontent-hcx-c42] span[_ngcontent-hcx-c42]:before {
+  width: 150px;
+  position: relative;
+  right: 10px;
+}
+.whatsapp_ids_section[_ngcontent-hcx-c42] span[_ngcontent-hcx-c42] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+.whatsapp_ids_section[_ngcontent-hcx-c42] h4[_ngcontent-hcx-c42] {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+h4{
+  font-family: 'Lato', sans-serif;
+  margin-top: 0;
+  line-height: 1.2;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.pass {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+}
+.wis_div[_ngcontent-hcx-c42] {
+  display: flex;
+  align-items: center;
+}
+.wis_div[_ngcontent-hcx-c42] img[_ngcontent-hcx-c42] {
+  width: 45px !important;
+  height: 45px;
+  margin: 10px 0;
+  filter: grayscale(1);
+}
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+a.whatsapp_link[_ngcontent-hcx-c42] {
+  text-align: center;
+  display: flex;
+  background: #F26C20;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 18px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+a.whatsapp_link[_ngcontent-hcx-c42] img[_ngcontent-hcx-c42] {
+  margin-right: 10px !important;
+  width: 30px;
+  margin: 0;
+  filter: invert(1);
+}
+
+.login_modal img {
+  /* width: 200px;
+  margin: 30px auto 40px auto; */
+  display: block;
+}
+img {
+  vertical-align: middle;
+}
+.wis_div[_ngcontent-hcx-c42] b[_ngcontent-hcx-c42] {
+  color: #fff;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin-left: 5px;
+}
+b {
+  /* font-weight: bolder; */
+}
+
+.whatsapp_ids_section[_ngcontent-hcx-c42] span[_ngcontent-hcx-c42]:before {
+  content: "";
+  background: #F26C20;
+  height: 1px;
+}
+.whatsapp_ids_section[_ngcontent-hcx-c42] span[_ngcontent-hcx-c42]:after {
+  width: 150px;
+  left: 10px;
+  position: relative;
+}
+.whatsapp_ids_section[_ngcontent-hcx-c42] span[_ngcontent-hcx-c42]:after {
+  content: "";
+  background: #F26C20;
+  height: 1px;
+}
+.login__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 2rem;
+}
+.login__content, .login__box {
+  display: grid;
+}
+.login__content {
+  row-gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.login__box {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: -0.25rem;
+  border-bottom: 2px solid #F26C20;
+}
+.login__icon {
+  font-size: 1.25rem;
+  color: white;
+  margin-left: -25px;
+}
+.login__input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  color: #F26C20;
+  text-decoration: #F26C20;
+  position: relative;
+  z-index: 1;
+}
+.login__box-input {
+  position: relative;
+}
+.login__label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: var(--font-medium);
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.btn-group {
+  display: block;
+}
+.btn-group {
+  border-radius: .375rem;
+}
+.btn-group{
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.v-btn {
+  cursor: pointer;
+  display: block;
+  font-weight: 300;
+  color: #fff;
+  border: #F26C20 1px solid;
+  height: 36px;
+  border-radius: 28px;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  height: 44px;
+  margin-bottom: 10px;
+}
+.v-btn:hover {
+  background-color: var(--theme-bg);
+  -webkit-animation: grow-y .4s ease-in-out;
+  animation: grow-y .4s ease-in-out;
+  transition: opacity .2s cubic-bezier(.4,0,.6,1);
+  color: #fff;
+}
+.login__eye {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 10;
+  cursor: pointer;
+  color: #F26C20;
+}
+.login__box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+.login__check, .login__check-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login__check {
+  margin-bottom: 1.5rem;
+}
+.login__check-label, .login__forgot, .login__register {
+  font-size: var(--small-font-size);
+}
+.login__check-group {
+  column-gap: 0.5rem;
+}
+/* .login__check-input {
+  width: 20px;
+  height: 18px;
+  margin-left: -35px;
+   } */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 0.25rem;
+    border: 1px solid #F26C20;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+  }
+input[type="checkbox"]:after{
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 1.12em;
+  color: white;
+  display: none;
+  /* margin-left: -65px; */
+}
+
+input[type="checkbox"]:checked{
+  background-color: #000;
+  border: 1px solid #F26C20;
+}
+input[type="checkbox"]:checked:after{
+  display: block;
+}
+
+body{
+  background-color: #121212;
+}
+
+img
+  {
+    width: 200px;
+    margin: -90px auto 30px auto;
+    display: block;
+}
+
+
+.login__button {
+  width: 110%;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.25rem;
+  border: 1px solid #F26C20;
+  background-color: #000;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+.login__button:hover{
+  width: 110%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: #F26C24;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+
+.login__register {
+  text-align: center;
+}
+.login__register a {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+.login__register a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus move up label */
+.login__input:focus + .login__label {
+  top: -12px;
+  font-size: var(--small-font-size);
+}
+
+/* Input focus sticky top label */
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+  top: -12px;
+  font-size: var(--small-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 440px) {
+  .login {
+    justify-content: center;
+  }
+  .login__form {
+    width: 432px;
+    padding: 10rem 2.5rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+  .login__title {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .login__form {
+    width: 432px;
+    padding: 10.5rem 4rem;
+    border-radius: 0.5rem;
+}
+.login__title {
+  font-size: 2rem;
+}
+.login {
+  justify-content: center;
+}
+}
+
+@media screen and (max-width: 440px) {
+  .login__form {
+    width: 432px;
+    padding: 10.5rem 4rem;
+    border-radius: 0.5rem;
+}
+.login__title {
+  font-size: 2rem;
+}
+.login {
+  justify-content: center;
+}
+.login__form {
+  padding: 10.5rem 5rem;
+  left: 10%;
+  background: #000 !important;
+  border-radius: 4px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid #000;
+  position: relative;
+  height: auto;
+  width: fit-content;
+  /* margin-top: 85px; */
+}
+}
